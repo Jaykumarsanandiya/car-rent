@@ -11,13 +11,13 @@
      <meta name="author" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}} ">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/owl.carousel.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="{{asset('car-rental/css/bootstrap.min.css')}} ">
+     <link rel="stylesheet" href="{{asset('car-rental/css/font-awesome.min.css')}}">
+     <link rel="stylesheet" href="{{asset('car-rental/css/owl.carousel.css')}}">
+     <link rel="stylesheet" href="{{asset('car-rental/css/owl.theme.default.min.css')}}">
 
      <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="{{asset('car-rental/css/style.css')}}">
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -111,6 +111,172 @@
                </div>
           </div>
      </section>
+
+
+     
+     <section class="section-background">
+        <div class="container">
+             <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                       <div class="courses-thumb courses-thumb-secondary">
+                            <div class="courses-top">
+                                 <div class="courses-image">
+                                      <img src="{{asset('car-rental/images/product-1-720x480.jpg')}}" class="img-responsive" alt="">
+                                 </div>
+                                 <div class="courses-date">
+                                      <span title="passegengers"><i class="fa fa-user"></i> 5</span>
+                                      <span title="luggages"><i class="fa fa-briefcase"></i> 4</span>
+                                      <span title="doors"><i class="fa fa-sign-out"></i> 4</span>
+                                      <span title="transmission"><i class="fa fa-cog"></i> A</span>
+                                 </div>
+                            </div>
+
+                            <div class="courses-detail">
+                                 <h3><a href="fleet.html">Large: Premium</a></h3>
+                                 <p class="lead"><small>from</small> <strong>$99</strong> <small>per weekend</small></p>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <div class="courses-info">
+                                 <button type="button" data-toggle="modal" data-target=".bs-example-modal" class="section-btn btn btn-primary btn-block">Book Now</button>
+                            </div>
+                       </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4">
+                       <div class="courses-thumb courses-thumb-secondary">
+                            <div class="courses-top">
+                                 <div class="courses-image">
+                                      <img src="{{asset('car-rental/images/product-2-720x480.jpg')}}" class="img-responsive" alt="">
+                                 </div>
+                                 <div class="courses-date">
+                                      <span title="passegengers"><i class="fa fa-user"></i> 5</span>
+                                      <span title="luggages"><i class="fa fa-briefcase"></i> 4</span>
+                                      <span title="doors"><i class="fa fa-sign-out"></i> 4</span>
+                                      <span title="transmission"><i class="fa fa-cog"></i> A</span>
+                                 </div>
+                            </div>
+
+                            <div class="courses-detail">
+                                 <h3><a href="fleet.html">Large: Station wagon</a></h3>
+                                 <p class="lead"><small>from</small> <strong>$99</strong> <small>per weekend</small></p>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <div class="courses-info">
+                                 <button type="button" data-toggle="modal" data-target=".bs-example-modal" class="section-btn btn btn-primary btn-block">Book Now</button>
+                            </div>
+                       </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4">
+                       <div class="courses-thumb courses-thumb-secondary">
+                            <div class="courses-top">
+                                 <div class="courses-image">
+                                      <img src="{{asset('car-rental/images/product-3-720x480.jpg')}}" class="img-responsive" alt="">
+                                 </div>
+                                 <div class="courses-date">
+                                      <span title="passegengers"><i class="fa fa-user"></i> 5</span>
+                                      <span title="luggages"><i class="fa fa-briefcase"></i> 4</span>
+                                      <span title="doors"><i class="fa fa-sign-out"></i> 4</span>
+                                      <span title="transmission"><i class="fa fa-cog"></i> A</span>
+                                 </div>
+                            </div>
+
+                            <div class="courses-detail">
+                                 <h3><a href="fleet.html">Medium: Low emission</a></h3>
+                                 <p class="lead"><small>from</small> <strong>$99</strong> <small>per weekend</small></p>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <div class="courses-info">
+                                 <button type="button" data-toggle="modal" data-target=".bs-example-modal" class="section-btn btn btn-primary btn-block">Book Now</button>
+                            </div>
+                       </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4">
+                       <div class="courses-thumb courses-thumb-secondary">
+                            <div class="courses-top">
+                                 <div class="courses-image">
+                                      <img src="{{asset('car-rental/images/product-4-720x480.jpg')}}" class="img-responsive" alt="">
+                                 </div>
+                                 <div class="courses-date">
+                                      <span title="passegengers"><i class="fa fa-user"></i> 4</span>
+                                      <span title="luggages"><i class="fa fa-briefcase"></i> 4</span>
+                                      <span title="doors"><i class="fa fa-sign-out"></i> 4</span>
+                                      <span title="transmission"><i class="fa fa-cog"></i> A</span>
+                                 </div>
+                            </div>
+
+                            <div class="courses-detail">
+                                 <h3><a href="fleet.html">Small: Economy</a></h3>
+                                 <p class="lead"><small>from</small> <strong>$99</strong> <small>per weekend</small></p>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <div class="courses-info">
+                                 <button type="button" data-toggle="modal" data-target=".bs-example-modal" class="section-btn btn btn-primary btn-block">Book Now</button>
+                            </div>
+                       </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4">
+                       <div class="courses-thumb courses-thumb-secondary">
+                            <div class="courses-top">
+                                 <div class="courses-image">
+                                      <img src="{{asset('car-rental/images/product-5-720x480.jpg')}}" class="img-responsive" alt="">
+                                 </div>
+                                 <div class="courses-date">
+                                      <span title="passegengers"><i class="fa fa-user"></i> 2</span>
+                                      <span title="luggages"><i class="fa fa-briefcase"></i> 2</span>
+                                      <span title="doors"><i class="fa fa-sign-out"></i> 2</span>
+                                      <span title="transmission"><i class="fa fa-cog"></i> M</span>
+                                 </div>
+                            </div>
+
+                            <div class="courses-detail">
+                                 <h3><a href="fleet.html">Small: Mini</a></h3>
+                                 <p class="lead"><small>from</small> <strong>$99</strong> <small>per weekend</small></p>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <div class="courses-info">
+                                 <button type="button" data-toggle="modal" data-target=".bs-example-modal" class="section-btn btn btn-primary btn-block">Book Now</button>
+                            </div>
+                       </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4">
+                       <div class="courses-thumb courses-thumb-secondary">
+                            <div class="courses-top">
+                                 <div class="courses-image">
+                                      <img src="{{asset('car-rental/images/product-6-720x480.jpg')}}" class="img-responsive" alt="">
+                                 </div>
+                                 <div class="courses-date">
+                                      <span title="passegengers"><i class="fa fa-user"></i> 5</span>
+                                      <span title="luggages"><i class="fa fa-briefcase"></i> 4</span>
+                                      <span title="doors"><i class="fa fa-sign-out"></i> 4</span>
+                                      <span title="transmission"><i class="fa fa-cog"></i> A</span>
+                                 </div>
+                            </div>
+
+                            <div class="courses-detail">
+                                 <h3><a href="fleet.html">Large: Premium</a></h3>
+                                 <p class="lead"><small>from</small> <strong>$99</strong> <small>per weekend</small></p>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <div class="courses-info">
+                                 <button type="button" data-toggle="modal" data-target=".bs-example-modal" class="section-btn btn btn-primary btn-block">Book Now</button>
+                            </div>
+                       </div>
+                  </div>
+             </div>
+        </div>
+   </section>
+
+
 
      <main>
           <section>
@@ -239,11 +405,11 @@
      </footer>
 
      <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/custom.js"></script>
+     <script src="{{asset('car-rental/js/jquery.js')}}"></script>
+     <script src="{{asset('car-rental/js/bootstrap.min.js')}}"></script>
+     <script src="{{asset('car-rental/js/owl.carousel.min.js')}}"></script>
+     <script src="{{asset('car-rental/js/smoothscroll.js')}}"></script>
+     <script src="{{asset('car-rental/js/custom.js')}}"></script>
 
 </body>
 </html>
