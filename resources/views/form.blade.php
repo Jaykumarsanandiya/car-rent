@@ -72,175 +72,46 @@
         </div>
     </section>
 
-    <!-- HOME -->
-    <section id="home">
-        <div class="row">
-            <div class="owl-carousel owl-theme home-slider">
-                <div class="item item-first">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="col-md-6 col-sm-12">
-                                <h1>Lorem ipsum dolor sit amet.</h1>
-                                <h3>Voluptas dignissimos esse, explicabo cum fugit eaque, perspiciatis quia ab nisi
-                                    sapiente delectus eiet.</h3>
-                                <a href="fleet.html" class="section-btn btn btn-default">Fleet</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item item-second">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="col-md-6 col-sm-12">
-                                <h1>Distinctio explicabo vero animi culpa facere voluptatem.</h1>
-                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, excepturi.</h3>
-                                <a href="fleet.html" class="section-btn btn btn-default">Fleet</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item item-third">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="col-md-6 col-sm-12">
-                                <h1>Efficient Learning Methods</h1>
-                                <h3>Nam eget sapien vel nibh euismod vulputate in vel nibh. Quisque eu ex eu urna
-                                    venenatis sollicitudin ut at libero.</h3>
-                                <a href="fleet.html" class="section-btn btn btn-default">Fleet</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                
+                <h4 class="modal-title" id="gridSystemModalLabel">Book Now</h4>
             </div>
-        </div>
-    </section>
 
-    @if (Session()->has('status'))
-    <div class="container">
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            {{ Session()->get('status') }}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+            <div class="modal-body">
+                <form action="/lead" method="POST" id="contact-form">
+                    @csrf
+
+                    <input type="text" class="form-control" name="fullName" placeholder="Enter full name" required>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="email" placeholder="Enter email address" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="number" class="form-control" name="phone" placeholder="Enter phone" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="carName" value="{{$car->company }}  {{$car->model }}" >
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text"   class="form-control" name="charge"  value="{{$car->charge }}" > 
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="section-btn btn btn-primary">Book Now</button>
+                    </div>
+                </form>
+            </div>
+
+            
         </div>
     </div>
-     @endif
-
-    <section class="section-background">
-        <div class="container">
-            <div class="row">
-
-                @foreach ($cars as $car)
-                    <div class="col-md-4 col-sm-3">
-                        <div class="courses-thumb courses-thumb-secondary">
-                            <div class="courses-top">
-                                <div class="courses-image">
-                                    <img src="{{ asset('car-rental/images/' . $car['image_url']) }}"
-                                        class="img-responsive" alt="">
-                                </div>
-
-                            </div>
-
-                            <div class="courses-detail">
-                                <h3 id="{{$car['model']}}">{{ $car['company'] . ' ' . $car['model'] }}</h3>
-                                <p class="lead"><small>from</small> <strong>Rs .
-                                        {{ $car['charge'] }}</strong> <small>per day</small></p>
-                                <span>
-                                    <img
-                                        src="https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-fuel-cars-components-those-icons-fill-those-icons.png" />
-
-                                    {{ $car['fuel'] }}</span><span><img
-                                        src="https://img.icons8.com/ios-filled/50/000000/gear-stick.png" />{{ $car['transmission'] }}</span>
-
-                                <span> <img src="https://img.icons8.com/material-outlined/24/000000/flight-seat.png" />
-                                    {{ $car['seating'] }} seats</span>
-                                <h4>Dealer Location : {{ $car['dealer_location'] }}</h4>
-                            </div>
-
-                            <div class="courses-info">
-                              {{-- data-toggle="modal" data-target=".bs-example-modal"  --}}
-                              
-                             <a href="/form/{{$car->id}}"  class="section-btn btn btn-primary btn-block" > Book Now </a>
-                                
-
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-
-
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <main>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="text-center">
-                            <h2>About us</h2>
-
-                            <br>
-
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Inventore molestias ipsa veritatis nihil iusto maiores natus dolor, a reiciendis
-                                corporis obcaecati ex. Totam assumenda impedit aut eum, illum distinctio saepe
-                                explicabo. Consequuntur molestiae similique id quos, quasi quas perferendis laboriosam,
-                                fugit natus odit totam! Id dolores saepe, sint debitis rerum dolorem tempora aliquid,
-                                pariatur enim nisi. Quia ab iusto assumenda.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-    </main>
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-6 col-sm-12">
-                    <form id="contact-form" role="form" action="" method="post">
-                        <div class="section-title">
-                            <h2>Contact us <small>we love conversations. let us talk!</small></h2>
-                        </div>
-
-                        <div class="col-md-12 col-sm-12">
-                            <input type="text" class="form-control" placeholder="Enter full name" name="name"
-                                required>
-
-                            <input type="email" class="form-control" placeholder="Enter email address" name="email"
-                                required>
-
-                            <textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required></textarea>
-                        </div>
-
-                        <div class="col-md-4 col-sm-12">
-                            <input type="submit" class="form-control" name="send message" value="Send Message">
-                        </div>
-
-                    </form>
-                </div>
-
-                <div class="col-md-6 col-sm-12">
-                    <div class="contact-image">
-                        <img src="images/contact-1-600x400.jpg" class="img-responsive" alt="Smiling Two Girls">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
     <!-- FOOTER -->
     <footer id="footer">
         <div class="container">
@@ -358,17 +229,7 @@
         </div>
     </div>
     <!-- SCRIPTS -->
-    <script >
 
-<script>
-$('.decline-loan-button').on('click', function () {
-$('#package_name').val($(this).data('package_name-input'));
-
-
-//If you want to pass data to for action for a form, you can do this 
- $('#decline-loan-form').attr('action', $(this).data('decline-link'));
-});
-</script>
     </script>
     <script src="{{ asset('car-rental/js/jquery.js') }}"></script>
     <script src="{{ asset('car-rental/js/bootstrap.min.js') }}"></script>
