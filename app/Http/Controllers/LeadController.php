@@ -20,7 +20,7 @@ class LeadController extends Controller
         $lead->charge =  $request->charge;
         $lead->save();
        
-        $request->session()->flash('status',   $lead->fullName .' ,  Our Car Dealer will call for ' . $lead->carName );
-        return redirect('/fleet');
+       
+        return redirect('/fleet')->with('status',  $lead->fullName .' ,  Our Car Dealer will call for ' . $lead->carName );
     }
 }
